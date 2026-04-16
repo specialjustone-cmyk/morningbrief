@@ -38,19 +38,26 @@ body{font-family:'Zen Maru Gothic',sans-serif;background:var(--bg);color:var(--t
 .tf{flex:1}.tn{font-size:13px;font-weight:500}.ts{font-size:11px;margin-top:1px}.tok{color:var(--green)}.tdl{color:var(--warm)}.tt{font-size:12px;color:var(--sub);text-align:right;line-height:1.4}.tt-dep{font-size:11px;font-weight:500;color:var(--text)}.tt-plat{font-size:9px;color:var(--sub)}
 .tsum{padding:10px 14px;border-radius:10px;font-size:12px;line-height:1.6;margin-top:10px}.tsok{background:var(--green-light);color:var(--green-dark)}.tsdl{background:var(--warm-light);color:var(--warm)}
 .tsrc{font-size:10px;color:var(--sub);text-align:center;margin-top:8px;font-style:italic}
-.tnxt{font-size:10px;color:var(--sub);margin-top:8px;padding:8px 12px;background:var(--paper);border-radius:8px}
-.stype{display:inline-block;font-size:9px;padding:1px 6px;border-radius:4px;margin-left:4px;font-weight:500}
-.stype-all{background:var(--paper);color:var(--sub)}.stype-exp{background:var(--green-light);color:var(--green-dark)}
+.tnxt{font-size:11px;color:var(--sub);margin-top:10px;padding:10px 12px;background:var(--paper);border-radius:8px;line-height:1.6}
+.tnxt-lbl{font-weight:500;color:var(--text);font-size:10px;text-transform:uppercase;letter-spacing:.5px;margin-right:4px}
+.stype{display:inline-block;font-size:9px;padding:1px 6px;border-radius:4px;margin-left:4px;font-weight:500}.stype-all{background:var(--paper);color:var(--sub)}.stype-exp{background:var(--green-light);color:var(--green-dark)}
 .mi{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border)}.mi:last-child{border-bottom:none}
-.mi-poster{width:48px;height:72px;border-radius:6px;object-fit:cover;background:var(--paper)}
-.mi-info{flex:1}.mi-title{font-size:13px;font-weight:500}.mi-meta{font-size:11px;color:var(--sub);margin-top:2px}.mi-desc{font-size:11px;color:var(--sub);margin-top:4px;line-height:1.5}
+.mi-poster{width:48px;height:72px;border-radius:6px;object-fit:cover;background:var(--paper);flex-shrink:0}
+.mi-info{flex:1;min-width:0}.mi-title{font-size:13px;font-weight:500}.mi-desc{font-size:11px;color:var(--sub);margin-top:4px;line-height:1.5}
 .mi-rating{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:500;color:var(--warm)}
 .mi-gem{font-size:9px;padding:2px 6px;border-radius:8px;background:var(--accent-light);color:var(--accent-dark);margin-left:6px}
-.ei{padding:14px 0;border-bottom:1px solid var(--border)}.ei:last-child{border-bottom:none}
+.egr{margin-top:16px}.egr:first-child{margin-top:0}
+.egr-h{font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;padding:4px 10px;background:var(--accent-light);border-radius:6px;display:inline-block}
+.egr-h.m{color:var(--warm);background:var(--warm-light)}
+.egr-h.nm{color:var(--indigo);background:var(--indigo-light)}
+.ei{padding:12px 0;border-bottom:1px solid var(--border)}.ei:last-child{border-bottom:none}
 .et{display:inline-block;padding:2px 8px;border-radius:12px;font-size:9px;font-weight:600;margin-bottom:6px}
 .et-fest{background:#FAEEDA;color:#854F0B}.et-market{background:var(--blue-light);color:var(--blue)}.et-outdoor{background:var(--green-light);color:var(--green-dark)}.et-art{background:var(--indigo-light);color:var(--indigo)}.et-community{background:var(--accent-light);color:var(--accent-dark)}.et-film{background:var(--warm-light);color:var(--warm)}
-.en{font-size:14px;font-weight:500;margin-bottom:3px}.em{font-size:11px;color:var(--sub)}.es{font-size:10px;color:var(--sub);margin-top:4px;font-style:italic}
-.ec{display:inline-block;font-size:9px;padding:2px 6px;border-radius:6px;background:var(--green-light);color:var(--green-dark);margin-left:6px}
+.en{font-size:14px;font-weight:500;margin-bottom:3px}
+.em{font-size:11px;color:var(--sub)}
+.es-link{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--blue);margin-top:6px;text-decoration:none;padding:3px 8px;background:var(--blue-light);border-radius:6px}
+.es-link svg{width:10px;height:10px;fill:currentColor}
+.ec{display:inline-block;font-size:9px;padding:2px 6px;border-radius:6px;background:var(--green-light);color:var(--green-dark);margin-left:6px}.ec.paid{background:var(--warm-light);color:var(--warm)}
 .sbox{font-size:13px;line-height:1.8;white-space:pre-wrap;padding:4px 0}
 .tip-box{margin-top:16px;padding:12px 16px;border-radius:10px;background:var(--paper);font-size:12px;line-height:1.6;border-left:3px solid var(--accent)}
 .tip-cat{font-size:9px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
@@ -77,7 +84,7 @@ body{font-family:'Zen Maru Gothic',sans-serif;background:var(--bg);color:var(--t
   <div class="sec fd"><div class="sh"><span class="sl">Your brief</span><div style="display:flex;align-items:center;gap:8px"><span class="sb" id="SB" style="background:var(--indigo-light);color:var(--indigo)">AI</span><button class="rb" id="RB" onclick="reBrief()"><svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>Refresh</button></div></div><div class="crd"><div class="sbox" id="SC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div id="TIP"></div></div></div>
   <div class="sec fd"><div class="sh"><span class="sl">Weather</span></div><div class="crd" id="WC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
   <div class="sec fd" id="WS" style="display:none"><div class="sh"><span class="sl">This week</span></div><div class="crd"><div class="wr" id="WR"></div></div></div>
-  <div class="sec fd"><div class="sh"><span class="sl">Commute</span><span class="sb" id="TB2" style="background:var(--green-light);color:var(--green-dark)">Live</span></div><div class="crd"><div class="dtg"><button class="db a" id="DW" onclick="sd('to_work')">Parramatta → SCG</button><button class="db" id="DH" onclick="sd('to_home')">SCG → Parramatta</button></div><div id="TC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div id="NX"></div><div class="tsrc">Live from Transport for NSW</div></div></div>
+  <div class="sec fd"><div class="sh"><span class="sl">Commute</span><div style="display:flex;align-items:center;gap:8px"><span class="sb" id="TB2" style="background:var(--green-light);color:var(--green-dark)">Live</span><button class="rb" id="TRB" onclick="reTransit()"><svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg></button></div></div><div class="crd"><div class="dtg"><button class="db a" id="DW" onclick="sd('to_work')">Parramatta → SCG</button><button class="db" id="DH" onclick="sd('to_home')">SCG → Parramatta</button></div><div id="TC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div><div id="NX"></div><div class="tsrc">Live from Transport for NSW</div></div></div>
   <div class="sec fd"><div class="sh"><span class="sl">Now showing</span><span class="sb" style="background:var(--warm-light);color:var(--warm)">TMDB</span></div><div class="crd" id="MC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
   <div class="sec fd"><div class="sh"><span class="sl">Events & activities</span><div style="display:flex;align-items:center;gap:8px"><span class="sb" id="EB2" style="background:var(--green-light);color:var(--green-dark)">AI</span><button class="rb" id="ERB" onclick="reEvents()"><svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>Refresh</button></div></div><div class="crd" id="EC"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
 </div>
@@ -93,13 +100,12 @@ body{font-family:'Zen Maru Gothic',sans-serif;background:var(--bg);color:var(--t
 const K='https://tfnsw-proxy.m9djxmy7nf.workers.dev';
 let W=null,PD=null,TI=null,MV=null,DR='auto',VO='onyx',WT=9,UN='Emma',au=null,pl=false,acache=null;
 let briefText='',briefVoice='';
-try{const s=JSON.parse(localStorage.getItem('ms8'));if(s){VO=s.v||VO;WT=s.wt||WT;UN=s.n||UN;if(s.t)document.body.setAttribute('data-theme',s.t)}}catch(e){}
+try{const s=JSON.parse(localStorage.getItem('ms9'));if(s){VO=s.v||VO;WT=s.wt||WT;UN=s.n||UN;if(s.t)document.body.setAttribute('data-theme',s.t)}}catch(e){}
 
-// DAILY TIPS
 const TIPS=[
 {cat:'Aussie Slang',tip:'"Arvo" = Afternoon. "See ya this arvo, mate."'},
 {cat:'Aussie Slang',tip:'"Brekkie" = Breakfast. "Heading out for brekkie?"'},
-{cat:'Aussie Slang',tip:'"Chucka sickie" = Taking a sick day (when you\'re not really sick)'},
+{cat:'Aussie Slang',tip:'"Chuck a sickie" = Taking a sick day when you\'re not really sick.'},
 {cat:'Aussie Slang',tip:'"Maccas" = McDonald\'s. Only in Australia.'},
 {cat:'Aussie Slang',tip:'"Sunnies" = Sunglasses. "Don\'t forget your sunnies!"'},
 {cat:'Aussie Slang',tip:'"Ute" = Pickup truck. Short for "utility vehicle."'},
@@ -120,9 +126,9 @@ const TIPS=[
 {cat:'Aussie Fun Fact',tip:'Melbourne was Australia\'s capital before Canberra was built as a compromise.'},
 {cat:'Aussie Fun Fact',tip:'Australia has the world\'s longest fence: the Dingo Fence at 5,614km.'},
 {cat:'Film History',tip:'The first feature film ever made was Australian: "The Story of the Kelly Gang" (1906).'},
-{cat:'Film History',tip:'Mad Max (1979) was the most profitable film ever made for years \u2014 budget of $400K, earned $100M.'},
+{cat:'Film History',tip:'Mad Max (1979) was the most profitable film ever made for years. Budget $400K, earned $100M.'},
 {cat:'Film History',tip:'Toy Story (1995) took 4 years and 800,000 machine-hours to render.'},
-{cat:'Film History',tip:'Studio Ghibli\'s name means "hot wind from the Sahara" \u2014 Miyazaki wanted to blow a new wind through the anime industry.'},
+{cat:'Film History',tip:'Studio Ghibli means "hot wind from the Sahara" \u2014 Miyazaki wanted to blow new wind through anime.'},
 {cat:'Film History',tip:'The Wilhelm Scream has been used in over 400 films since 1951.'},
 {cat:'Film History',tip:'Kubrick made Shelley Duvall do 127 takes of one scene in The Shining.'},
 {cat:'Film History',tip:'The Lion King animators studied real lions at the San Diego Zoo for two years.'},
@@ -131,24 +137,22 @@ const TIPS=[
 {cat:'Film History',tip:'Happy Feet was animated in Sydney at Animal Logic studios.'},
 {cat:'Writing Tips',tip:'Show, don\'t tell. Instead of "She was sad", try "She stared at the cold coffee she\'d forgotten to drink."'},
 {cat:'Writing Tips',tip:'Cut the word "very". Mark Twain: "Substitute \'damn\' every time you\'re inclined to write \'very\'."'},
-{cat:'Writing Tips',tip:'Start scenes late, leave early. Skip the hello and goodbye \u2014 get to the interesting part.'},
+{cat:'Writing Tips',tip:'Start scenes late, leave early. Skip the hello and goodbye.'},
 {cat:'Writing Tips',tip:'Read your dialogue out loud. If it sounds weird to say, it\'ll sound weird to read.'},
-{cat:'Writing Tips',tip:'Every character should want something, even if it\'s just a glass of water. \u2014 Vonnegut'},
+{cat:'Writing Tips',tip:'Every character should want something. \u2014 Vonnegut'},
 {cat:'Writing Tips',tip:'Strong verbs beat adverbs. "She sprinted" is better than "She ran quickly."'},
 {cat:'Writing Tips',tip:'The first draft is just telling yourself the story. \u2014 Terry Pratchett'},
-{cat:'Writing Tips',tip:'Conflict drives story. No conflict = no story. Even in comedy.'},
+{cat:'Writing Tips',tip:'Conflict drives story. No conflict = no story.'},
 {cat:'Writing Tips',tip:'Write the ending first. Knowing where you\'re going makes the journey easier.'},
 {cat:'Writing Tips',tip:'Kill your darlings. If a sentence is clever but doesn\'t serve the story, cut it.'},
 ];
 function todayTip(){const d=new Date(),idx=(d.getFullYear()*1000+d.getMonth()*50+d.getDate())%TIPS.length;return TIPS[idx]}
 
-// TIME
 function uT(){const n=new Date(),h=n.getHours(),m=String(n.getMinutes()).padStart(2,'0');document.getElementById('T').textContent=h+':'+m;const D=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];document.getElementById('D').textContent=D[n.getDay()]+', '+n.getDate()+' '+M[n.getMonth()]+' '+n.getFullYear();document.getElementById('G').textContent=(h<12?'Good morning':h<18?'Good afternoon':'Good evening')+(UN?', '+UN:'');uCD();if(DR==='auto'){document.getElementById('DW').classList.toggle('a',h<13);document.getElementById('DH').classList.toggle('a',h>=13)}}
 function uCD(){const n=new Date(),h=n.getHours(),el=document.getElementById('CD');if(h>=WT||h<5){el.style.display='none';return}const d=WT*60-55-h*60-n.getMinutes();if(d<=0||d>180){el.style.display='none';return}el.style.display='inline-flex';el.className=d<=15?'cd u':'cd';el.textContent=d<=15?'\u23F0 Leave in '+d+' min!':d+' min until you should leave'}
 uT();setInterval(uT,30000);
 function sd(d){DR=d;document.getElementById('DW').classList.toggle('a',d==='to_work');document.getElementById('DH').classList.toggle('a',d==='to_home');lT(d)}
 
-// WEATHER
 function wI(c){if(c<=1)return'\u2600\uFE0F';if(c<=3)return'\u26C5';if(c<=48)return'\u2601\uFE0F';if(c<=57)return'\uD83C\uDF26';if(c<=67)return'\uD83C\uDF27';if(c<=77)return'\uD83C\uDF28';if(c<=82)return'\uD83C\uDF27';if(c>=95)return'\u26C8';return'\uD83C\uDF24'}
 function wDsc(c){if(c<=1)return'Clear';if(c===2)return'Partly cloudy';if(c===3)return'Overcast';if(c<=48)return'Fog';if(c<=57)return'Drizzle';if(c<=67)return'Rain';if(c<=77)return'Snow';if(c<=82)return'Showers';if(c>=95)return'Thunderstorm';return'Clear'}
 function cTp(t,r,u){let a=[];if(t<=10)a.push('Bundle up');else if(t<=18)a.push('Bring a jacket');else if(t<=25)a.push('Light layers');else a.push('Dress light');if(r>50)a.push('Grab an umbrella');else if(r>30)a.push('Maybe an umbrella');if(u>=8)a.push('Sunscreen+hat essential');else if(u>=5)a.push('Sunscreen recommended');return a.join('. ')+'.'}
@@ -160,7 +164,26 @@ lW();
 
 // TRANSIT
 function fT(iso){if(!iso)return'';return new Date(iso).toLocaleTimeString('en-AU',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Australia/Sydney'})}
-async function lT(dir){const d=dir||(new Date().getHours()<13?'to_work':'to_home');document.getElementById('TC').innerHTML='<span class="dot"></span><span class="dot"></span><span class="dot"></span>';document.getElementById('NX').innerHTML='';try{const r=await fetch(K+'/trip?direction='+d),data=await r.json();if(data.journeys?.length>0)rT(data);else{document.getElementById('TC').innerHTML='<p style="font-size:13px;color:var(--sub)">No trips found</p>';TI=null}}catch(e){document.getElementById('TC').innerHTML='<p style="font-size:13px;color:var(--sub)">Could not connect</p>';TI=null}tryBrief()}
+// Count intermediate stops between Parramatta and Central
+function countIntermediateStops(leg) {
+  if (!leg.stopSequence) return 0;
+  // stopSequence includes origin and destination, so intermediate = length - 2
+  return Math.max(0, leg.stopSequence.length - 2);
+}
+async function lT(dir){
+  const d=dir||(new Date().getHours()<13?'to_work':'to_home');
+  document.getElementById('TC').innerHTML='<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+  document.getElementById('NX').innerHTML='';
+  // Add cache-buster timestamp to force fresh data
+  try{
+    const r=await fetch(K+'/trip?direction='+d+'&_='+Date.now());
+    const data=await r.json();
+    if(data.journeys?.length>0)rT(data);
+    else{document.getElementById('TC').innerHTML='<p style="font-size:13px;color:var(--sub)">No trips found</p>';TI=null}
+  }catch(e){document.getElementById('TC').innerHTML='<p style="font-size:13px;color:var(--sub)">Could not connect</p>';TI=null}
+  tryBrief()
+}
+function reTransit(){const b=document.getElementById('TRB');b.classList.add('spin');const dir=document.getElementById('DW').classList.contains('a')?'to_work':'to_home';lT(dir).finally(()=>setTimeout(()=>b.classList.remove('spin'),500))}
 function rT(data){
   const j=data.journeys[0];let h='',tot=0,dl=false,legs=[];
   j.legs.forEach(l=>{
@@ -168,25 +191,50 @@ function rT(data){
     if(dur<1&&isW)return;tot+=dur;
     if(isW){h+='<div class="ti"><span class="tb tb4">Walk</span><div class="tf"><div class="tn">'+(l.origin?.disassembledName||'')+'</div><div class="ts tok">to '+(l.destination?.disassembledName||'')+'</div></div><div class="tt">'+dur+'m</div></div>';legs.push({m:'walk',dur});return}
     const ln=tp.disassembledName||tp.number||'',pn=tp.product?.name||'';
-    let c='tb1';if(pn.includes('Light Rail')||tp.product?.class===4)c='tb2';else if(pn.includes('Bus')||tp.product?.class===5||tp.product?.class===7)c='tb3';
+    let c='tb1',mode='train';
+    if(pn.includes('Light Rail')||tp.product?.class===4){c='tb2';mode='lr'}
+    else if(pn.includes('Bus')||tp.product?.class===5||tp.product?.class===7){c='tb3';mode='bus'}
     let dm=0;const pld=l.origin?.departureTimePlanned,est=l.origin?.departureTimeEstimated;
     if(pld&&est)dm=Math.round((new Date(est)-new Date(pld))/6e4);if(dm>2)dl=true;
     const depTime=fT(est||pld);
     const plat=l.origin?.properties?.platformName||'';
     const fr=l.origin?.parent?.disassembledName||l.origin?.disassembledName||'';
     const to=l.destination?.parent?.disassembledName||l.destination?.disassembledName||'';
-    // Determine all stops vs limited/express
-    const stops=l.stopSequence?l.stopSequence.length:0;
+    // Determine train type: intermediate stops between origin and destination
     let stype='',stcls='';
-    if(stops>0&&(c==='tb1')){if(stops>10){stype='All stops';stcls='stype-all'}else{stype='Limited stops';stcls='stype-exp'}}
+    if(mode==='train'){
+      const intStops=countIntermediateStops(l);
+      if(intStops<=4){stype='Limited stops';stcls='stype-exp'}
+      else{stype='All stops';stcls='stype-all'}
+    }
     h+='<div class="ti"><span class="tb '+c+'">'+ln+'</span><div class="tf"><div class="tn">'+fr+' \u2192 '+to+(stype?'<span class="stype '+stcls+'">'+stype+'</span>':'')+'</div><div class="ts '+(dm>2?'tdl':'tok')+'">'+(dm>2?'Delayed ~'+dm+'m':'On time')+'</div></div><div class="tt"><div class="tt-dep">'+depTime+'</div>'+(plat?'<div class="tt-plat">'+plat+'</div>':'')+'</div></div>';
-    legs.push({m:ln,fr,to,dm,dur,dep:depTime,plat,stype});
+    legs.push({m:ln,mode,fr,to,dm,dur,dep:depTime,plat,stype});
   });
   document.getElementById('TC').innerHTML=h+(dl?'<div class="tsum tsdl">\u26A0\uFE0F Delays. ~'+tot+' min.</div>':'<div class="tsum tsok">\u2705 All on time. ~'+tot+' min.</div>');
-  if(data.journeys.length>1){
-    const alts=data.journeys.slice(1,3).map(j2=>{const fl=j2.legs.find(l=>l.transportation&&l.transportation.product?.class!==100);if(!fl)return null;const t=fT(fl.origin?.departureTimeEstimated||fl.origin?.departureTimePlanned);const dur2=Math.round(j2.legs.reduce((s,l)=>s+(l.duration||0),0)/60);const stops2=fl.stopSequence?fl.stopSequence.length:0;const st2=stops2>10?'all stops':stops2>0?'limited':'';return t?t+(st2?' ('+st2+')':'')+' \u00B7 '+dur2+'m':null}).filter(Boolean);
-    if(alts.length)document.getElementById('NX').innerHTML='<div class="tnxt">Later: '+alts.join(' \u00B7 ')+'</div>';
-  }
+
+  // Collect next departures per mode
+  const nextByMode={train:[],lr:[],bus:[]};
+  data.journeys.slice(1).forEach(j2=>{
+    j2.legs.forEach(l=>{
+      const tp=l.transportation;if(!tp||tp.product?.class===100)return;
+      const pn=tp.product?.name||'';let mode='train';
+      if(pn.includes('Light Rail')||tp.product?.class===4)mode='lr';
+      else if(pn.includes('Bus')||tp.product?.class===5||tp.product?.class===7)mode='bus';
+      const t=fT(l.origin?.departureTimeEstimated||l.origin?.departureTimePlanned);
+      if(!t)return;
+      let st='';if(mode==='train'){const is=countIntermediateStops(l);st=is<=4?' (limited)':' (all stops)'}
+      // Only add if not duplicate and reasonable count
+      if(nextByMode[mode].length<2&&!nextByMode[mode].find(x=>x.startsWith(t))){
+        nextByMode[mode].push(t+st);
+      }
+    });
+  });
+  let nxH='';
+  if(nextByMode.train.length)nxH+='<div><span class="tnxt-lbl">Next trains:</span>'+nextByMode.train.join(' \u00B7 ')+'</div>';
+  if(nextByMode.lr.length)nxH+='<div style="margin-top:4px"><span class="tnxt-lbl">Next light rail:</span>'+nextByMode.lr.join(' \u00B7 ')+'</div>';
+  if(nextByMode.bus.length)nxH+='<div style="margin-top:4px"><span class="tnxt-lbl">Next buses:</span>'+nextByMode.bus.join(' \u00B7 ')+'</div>';
+  if(nxH)document.getElementById('NX').innerHTML='<div class="tnxt">'+nxH+'</div>';
+
   TI={tot,dl,legs};
 }
 lT();
@@ -199,31 +247,50 @@ async function lM(){
 }
 function rM(){
   if(!MV)return;let h='';
-  const all=[...(MV.mainstream||[]),...(MV.hidden_gems||[]).map(m=>({...m,gem:true}))];
+  // Deduplicate by id
+  const seen=new Set();
+  const all=[];
+  (MV.mainstream||[]).forEach(m=>{if(!seen.has(m.id)){seen.add(m.id);all.push(m)}});
+  (MV.hidden_gems||[]).forEach(m=>{if(!seen.has(m.id)){seen.add(m.id);all.push({...m,gem:true})}});
   all.slice(0,5).forEach(m=>{
-    h+='<div class="mi">'+(m.poster?'<img class="mi-poster" src="'+m.poster+'" alt="">':'')+'<div class="mi-info"><div class="mi-title">'+m.title+'<span class="mi-rating"> \u2605 '+m.rating+'</span>'+(m.gem?'<span class="mi-gem">Hidden gem</span>':'')+'</div><div class="mi-desc">'+m.overview+'</div></div></div>';
+    h+='<div class="mi">'+(m.poster?'<img class="mi-poster" src="'+m.poster+'" alt="">':'')+'<div class="mi-info"><div class="mi-title">'+escHtml(m.title)+' <span class="mi-rating">\u2605 '+m.rating+'</span>'+(m.gem?'<span class="mi-gem">Hidden gem</span>':'')+'</div><div class="mi-desc">'+escHtml(m.overview)+'</div></div></div>';
   });
   document.getElementById('MC').innerHTML=h||'<p style="font-size:13px;color:var(--sub)">No movies found</p>';
 }
+function escHtml(s){return(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 lM();
 
-// EVENTS
+// EVENTS with 3 time windows
 async function lE(){
   const wk='events_wk_'+weekKey();
   try{const c=JSON.parse(localStorage.getItem(wk));if(c){rE(c);return}}catch(e){}
   try{const r=await fetch(K+'/events');const d=await r.json();rE(d);try{localStorage.setItem(wk,JSON.stringify(d))}catch(e){}}catch(e){document.getElementById('EC').innerHTML='<p style="font-size:13px;color:var(--sub)">Unable to load events</p>'}
 }
 function weekKey(){const d=new Date(),day=d.getDay(),diff=d.getDate()-day;return new Date(d.setDate(diff)).toISOString().slice(0,10)}
-function rE(data){
+function gSearch(name){return'https://www.google.com/search?q='+encodeURIComponent(name+' Sydney')}
+function fmtDate(iso){if(!iso)return'';const d=new Date(iso);return d.toLocaleDateString('en-AU',{day:'numeric',month:'short'})}
+function eventItemHtml(e,isAnnual){
   const catCls={festival:'et-fest',market:'et-market',outdoor:'et-outdoor',art:'et-art',community:'et-community',film:'et-film'};
+  const costHtml=isAnnual?'':(e.cost&&e.cost.toLowerCase().includes('free')?'<span class="ec">Free</span>':(e.cost?'<span class="ec paid">'+escHtml(e.cost)+'</span>':''));
+  const when=isAnnual?(fmtDate(e.start)+(e.start!==e.end?' – '+fmtDate(e.end):'')):(e.when||'');
+  const where=isAnnual?'':(e.where?' \u2014 '+escHtml(e.where):'');
+  return '<div class="ei"><span class="et '+(catCls[e.cat]||'et-fest')+'">'+capitalize(e.cat||'event')+'</span><div class="en">'+escHtml(e.name)+costHtml+'</div><div class="em">'+when+where+'</div>'+(e.desc?'<div class="em" style="margin-top:3px;color:var(--text)">'+escHtml(e.desc)+'</div>':'')+'<a href="'+gSearch(e.name)+'" target="_blank" class="es-link"><svg viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7zM5 5v14h14v-7h-2v5H7V7h5V5H5z"/></svg>Search this event</a></div>';
+}
+function rE(data){
   let h='';
-  // Annual events first
-  if(data.annual?.length){data.annual.forEach(e=>{h+='<div class="ei"><span class="et '+(catCls[e.cat]||'et-fest')+'">'+capitalize(e.cat||'festival')+'</span><div class="en">'+e.name+'</div><div class="em">'+e.desc+'</div><div class="es">Annual event</div></div>'})}
-  // Weekly events
-  if(data.weekly?.length){data.weekly.forEach(e=>{const cost=e.cost&&e.cost!=='Free'?'<span class="ec">'+e.cost+'</span>':'<span class="ec">Free</span>';h+='<div class="ei"><span class="et '+(catCls[e.cat]||'et-community')+'">'+capitalize(e.cat||'event')+'</span><div class="en">'+e.name+cost+'</div><div class="em">'+(e.when||'')+' \u2014 '+(e.where||'')+'</div><div class="em" style="margin-top:3px;color:var(--text)">'+(e.desc||'')+'</div><div class="es">AI-sourced \u2014 verify dates</div></div>'})}
+  // THIS WEEK
+  const wkEvents=[...(data.annual_this_week||[]).map(e=>({...e,_isAnnual:true})),...(data.this_week||[])];
+  if(wkEvents.length){h+='<div class="egr"><div class="egr-h">This week</div>';wkEvents.forEach(e=>h+=eventItemHtml(e,e._isAnnual));h+='</div>'}
+  // THIS MONTH
+  const mEvents=[...(data.annual_this_month||[]).map(e=>({...e,_isAnnual:true})),...(data.this_month||[])];
+  if(mEvents.length){h+='<div class="egr"><div class="egr-h m">This month</div>';mEvents.forEach(e=>h+=eventItemHtml(e,e._isAnnual));h+='</div>'}
+  // NEXT MONTH
+  const nmEvents=[...(data.annual_next_month||[]).map(e=>({...e,_isAnnual:true})),...(data.next_month||[])];
+  if(nmEvents.length){h+='<div class="egr"><div class="egr-h nm">Next month \u2014 plan ahead</div>';nmEvents.forEach(e=>h+=eventItemHtml(e,e._isAnnual));h+='</div>'}
+
   document.getElementById('EC').innerHTML=h||'<p style="font-size:13px;color:var(--sub)">No events found</p>';
   document.getElementById('EB2').textContent='AI';
-  window.eB=(data.weekly||[]).slice(0,2).map(e=>e.name+', '+(e.when||'')).join('. ')||(data.annual||[]).slice(0,2).map(e=>e.name).join(', ');
+  window.eB=wkEvents.slice(0,2).map(e=>e.name+(e.when?', '+e.when:'')).join('. ')||mEvents.slice(0,2).map(e=>e.name).join(', ');
 }
 function reEvents(){const b=document.getElementById('ERB');b.classList.add('spin');try{localStorage.removeItem('events_wk_'+weekKey())}catch(e){}fetch(K+'/events').then(r=>r.json()).then(d=>{rE(d);try{localStorage.setItem('events_wk_'+weekKey(),JSON.stringify(d))}catch(e){}}).catch(()=>{}).finally(()=>setTimeout(()=>b.classList.remove('spin'),500))}
 lE();
@@ -250,21 +317,19 @@ async function gB(){
 function reBrief(){const b=document.getElementById('RB');b.classList.add('spin');acache=null;try{localStorage.removeItem(bKey())}catch(e){}gB().finally(()=>setTimeout(()=>b.classList.remove('spin'),500))}
 function fB(){const h=new Date().getHours();let s=(h<12?'Morning':h<18?'Afternoon':'Evening')+', '+UN+'. ';if(W){const t=Math.round(W.c.temperature_2m),f=Math.round(W.c.apparent_temperature),r=W.d.precipitation_probability_max[0];s+=t+'\u00B0, feels '+f+'\u00B0. '+(r>50?'Umbrella essential. ':r>25?'Might drizzle. ':'Dry day. ')}if(PD&&PD.tot>20)s+='Pollen '+(PD.tot>50?'high':'moderate')+'. ';if(TI)s+=TI.dl?'Delays, ~'+TI.tot+'min. ':'Clear commute, ~'+TI.tot+'min. ';s+=['Have a good one.','You got this.','Go crush it.'][Math.floor(Math.random()*3)];return s}
 function showTip(){const tip=todayTip();document.getElementById('TIP').innerHTML='<div class="tip-box"><div class="tip-cat">'+tip.cat+'</div>'+tip.tip+'</div>'}
-function capitalize(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+function capitalize(s){return (s||'').charAt(0).toUpperCase()+(s||'').slice(1)}
 
-// TTS
 async function play(){if(pl){stp();return}if(!briefVoice&&!briefText)return;const b=document.getElementById('PB');if(acache){au=new Audio(acache);au.onended=()=>stp();au.play();pl=true;b.classList.add('on');document.getElementById('PL').textContent='Stop';document.getElementById('PI').innerHTML='<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';return}b.classList.add('ld');document.getElementById('PL').textContent='Loading...';try{const r=await fetch(K+'/speak',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:briefVoice||briefText,voice:VO})});if(!r.ok)throw 0;const bl=await r.blob(),u=URL.createObjectURL(bl);acache=u;au=new Audio(u);au.onended=()=>stp();au.play();pl=true;b.classList.remove('ld');b.classList.add('on');document.getElementById('PL').textContent='Stop';document.getElementById('PI').innerHTML='<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>'}catch(e){b.classList.remove('ld');fbTTS(briefVoice||briefText)}}
 function fbTTS(t){const u=new SpeechSynthesisUtterance(t);u.lang='en-AU';u.rate=.93;u.pitch=.92;const v=speechSynthesis.getVoices(),vo=v.find(x=>x.lang==='en-AU')||v.find(x=>x.lang.startsWith('en'))||v[0];if(vo)u.voice=vo;u.onend=()=>stp();pl=true;document.getElementById('PB').classList.add('on');document.getElementById('PL').textContent='Stop';document.getElementById('PI').innerHTML='<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>';speechSynthesis.speak(u)}
 function stp(){if(au){au.pause();au=null}speechSynthesis.cancel();pl=false;document.getElementById('PB').classList.remove('on','ld');document.getElementById('PL').textContent='Play brief';document.getElementById('PI').innerHTML='<polygon points="5,3 19,12 5,21"/>'}
 speechSynthesis.onvoiceschanged=()=>speechSynthesis.getVoices();
 
-// SETTINGS
 function oS(){document.getElementById('SO').classList.add('open');document.getElementById('iN').value=UN;document.getElementById('iW').value=String(WT).padStart(2,'0')+':00'}
 function cS(e){if(e.target===document.getElementById('SO'))document.getElementById('SO').classList.remove('open')}
 function sT(t,el){document.body.setAttribute('data-theme',t);document.querySelectorAll('.tc').forEach(c=>c.classList.remove('a'));el.querySelector('.tc').classList.add('a');ss({t})}
 function sV(el,v){el.parentElement.querySelectorAll('.cp').forEach(c=>c.classList.remove('a'));el.classList.add('a');VO=v}
 function svS(){UN=document.getElementById('iN').value||'Emma';WT=parseInt(document.getElementById('iW').value.split(':')[0])||9;ss({n:UN,wt:WT,v:VO,t:document.body.getAttribute('data-theme')});document.getElementById('SO').classList.remove('open');document.querySelector('.svb').textContent='\u2713 Saved';setTimeout(()=>document.querySelector('.svb').textContent='Save',1200);uT();reBrief()}
-function ss(d){try{const c=JSON.parse(localStorage.getItem('ms8')||'{}');localStorage.setItem('ms8',JSON.stringify({...c,...d}))}catch(e){}}
+function ss(d){try{const c=JSON.parse(localStorage.getItem('ms9')||'{}');localStorage.setItem('ms9',JSON.stringify({...c,...d}))}catch(e){}}
 </script>
 </body>
 </html>
